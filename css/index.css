@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+
+.menu {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    outline: none;
+    border: none;
+    scale: 1;
+    transition: 0.5s;
+
+}
+
+.menu:hover {
+    scale: 1.2;
+}
+
+.todo {
+    width: 100%;
+    height: 100vh;
+    background:#DCF2F1;
+    background-size: cover;
+}
+
+.todo .todo-body {
+    width: 100%;
+    height: 60vh;
+    background: #45454502;
+    backdrop-filter: blur(50px);
+}
+
+.todo .todo-body h5 {
+    color: #365486;
+    font-family: "lekton";
+    font-size: 30px;
+    line-height: 22px;
+    font-weight: 700;
+
+}
+
+.savedtask {
+    position: absolute;
+    top: 10%;
+    left: -80%;
+    transition: 0.5s;
+    z-index: 9;
+    width: 20%;
+    height: 80%;
+    background: #7a7a7a0e;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media (max-width:790px) {
+    .savedtask {
+        width: 50%;
+    }
+}
+
+.savedtask h5 {
+    background: #365486;
+    color: white;
+}
+.saved-list {
+    overflow: auto;
+}
+.saved-list li{
+    display: flex;
+    align-items: center;
+
+}
+.saved-list section{
+    background: none;
+    border: none;
+    border-radius: 0  10px 10px 0;
+    font-size: 20px;
+    outline: none;
+    font-weight: 400;
+    text-align: left;
+    border-bottom: 1px solid #c7d8dc;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+}
+.saved-list section .date{
+    font-size: 13px;
+    color: rgb(54, 54, 109);
+    font-weight: 700;
+}
+.saved-list  i {
+    cursor: pointer;
+}
+
+.saved-list button:hover{
+    background: rgb(217, 240, 245);
+}
+
+.todo .todo-body h5 span {
+    color: black;
+}
+
+.todo .todo-body .task {
+    width: 70%;
+    height: 40px;
+    font-size: 20px;
+    font-family: "lekton";
+    outline: none;
+    background: none;
+    border: none;
+    color: rgb(38, 38, 38);
+    border-bottom: 1px solid #9BBEC8;
+}
+
+.todo .todo-body .submit {
+    background: none;
+    border: 1px solid #9BBEC8;
+    border-radius: 20px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.todo .todo-body .submit:hover {
+    background: white;
+   border: 3px solid rgb(22, 158, 203);
+
+}
+
+.todo .todo-body .tasklist {
+    height: 44vh;
+    overflow: auto;
+}
+
+
+.todo .todo-body li {
+    background: #DDF2FD;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #365486;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.todo .todo-body li p {
+    color: rgb(37, 37, 37);
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 70%;
+overflow: auto;}
+
+.todo .todo-body li i {
+    padding: 3px;
+    font-weight: 900;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.todo .todo-body li .editebox {
+    display: none;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    left: 20px;
+    padding: 0;
+
+}
+
+.todo .todo-body li button {
+    display: none;
+    line-height: 5px;
+    background-color: #9BBEC8;
+    border: 1px solid black;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.todo .save-btn {
+    border: rgb(22, 158, 203);
+    background: rgb(22, 158, 203);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    bottom: 0;
+    margin-top: 20px;
+    transition: 0.5s;
+
+}
+
+.todo .save-btn:hover {
+    background: white;
+    color: black;
+}
