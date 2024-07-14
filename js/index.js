@@ -69,6 +69,7 @@ document.getElementById("task-ul").addEventListener("click", function (dets) {
     // delete the index
     tasklist.splice(arrayIndex, 1);
     reloadTaskUi();
+    saveBTnApper();
   }
   // when click on task  edite button  
   else if (taskid.includes("edit")) {
@@ -110,7 +111,10 @@ function reloadTaskUi() {
     checked = isChecked == true ? 'checked' : ''
     listbox =
       listbox +
-      `<li id="list"><input id="checkboxId_${textid}" type="checkbox" ${checked}><p id="contentId_${textid}" class="ms-3 ">${tasklist[i].text}</p> <input id="typebox_${textid}" class="editebox" type="text"><button id="savebtn_${textid}">save</button><i id="edit_${textid}" class="bi bi-pencil-square fs-5"></i><i id="delete_${textid}" class="bi bi-x delete"></i></li>`;
+      `<li id="list"><div class="checkbox-wrapper-19">
+  <input type="checkbox" id="checkboxId_${textid}"  ${checked}  />
+  <label for="checkboxId_${textid}" class="check-box">
+</div><p id="contentId_${textid}" class="ms-3 ">${tasklist[i].text}</p> <input id="typebox_${textid}" class="editebox" type="text"><button id="savebtn_${textid}">save</button><i id="edit_${textid}" class="bi bi-pencil-square fs-5"></i><i id="delete_${textid}" class="bi bi-x delete"></i></li>`;
   }
   document.getElementById("task-ul").innerHTML = listbox;
 }
