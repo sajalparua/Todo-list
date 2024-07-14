@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+
+.menu {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    outline: none;
+    border: none;
+    scale: 1;
+    transition: 0.5s;
+
+}
+
+.menu:hover {
+    scale: 1.2;
+}
+
+.todo {
+    width: 100%;
+    height: 100vh;
+    background:#DCF2F1;
+    background-size: cover;
+}
+
+.todo .todo-body {
+    width: 100%;
+    height: 60vh;
+    background: #45454502;
+    backdrop-filter: blur(50px);
+}
+
+.todo .todo-body h5 {
+    color: #365486;
+    font-family: "lekton";
+    font-size: 30px;
+    line-height: 22px;
+    font-weight: 700;
+
+}
+
+.savedtask {
+    position: absolute;
+    top: 10%;
+    left: -80%;
+    transition: 0.5s;
+    z-index: 9;
+    width: 20%;
+    height: 80%;
+    background: #7a7a7a0e;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media (max-width:790px) {
+    .savedtask {
+        width: 50%;
+    }
+}
+
+.savedtask h5 {
+    background: #365486;
+    color: white;
+}
+.saved-list {
+    overflow: auto;
+}
+.saved-list li{
+    display: flex;
+    align-items: center;
+
+}
+.saved-list section{
+    background: none;
+    border: none;
+    border-radius: 0  10px 10px 0;
+    font-size: 20px;
+    outline: none;
+    font-weight: 400;
+    text-align: left;
+    border-bottom: 1px solid #c7d8dc;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+}
+.saved-list section .date{
+    font-size: 13px;
+    color: rgb(54, 54, 109);
+    font-weight: 700;
+}
+.saved-list  i {
+    cursor: pointer;
+}
+
+.saved-list button:hover{
+    background: rgb(217, 240, 245);
+}
+
+.todo .todo-body h5 span {
+    color: black;
+}
+
+.todo .todo-body .task {
+    width: 70%;
+    height: 40px;
+    font-size: 20px;
+    font-family: "lekton";
+    outline: none;
+    background: none;
+    border: none;
+    color: rgb(38, 38, 38);
+    border-bottom: 1px solid #9BBEC8;
+}
+
+.todo .todo-body .submit {
+    background: none;
+    border: 1px solid #9BBEC8;
+    border-radius: 20px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.todo .todo-body .submit:hover {
+    background: white;
+   border: 3px solid rgb(22, 158, 203);
+
+}
+
+.todo .todo-body .tasklist {
+    height: 44vh;
+    overflow: auto;
+}
+
+
+.todo .todo-body li {
+    background: #DDF2FD;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #365486;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.todo .todo-body li p {
+    color: rgb(37, 37, 37);
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 70%;
+overflow: auto;}
+
+.todo .todo-body li i {
+    padding: 3px;
+    font-weight: 900;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.todo .todo-body li .editebox {
+    display: none;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    left: 20px;
+    padding: 0;
+
+}
+
+.todo .todo-body li button {
+    display: none;
+    line-height: 5px;
+    background-color: #9BBEC8;
+    border: 1px solid black;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.todo .save-btn {
+    border: rgb(22, 158, 203);
+    background: rgb(22, 158, 203);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    bottom: 0;
+    margin-top: 20px;
+    transition: 0.5s;
+
+}
+
+.todo .save-btn:hover {
+    background: white;
+    color: black;
+}
+/* ////////////////////////////////// */
+
+  .checkbox-wrapper-19 {
+    box-sizing: border-box;
+    --background-color: #fff;
+    --checkbox-height: 25px;
+  }
+
+  @-moz-keyframes dothabottomcheck-19 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: calc(var(--checkbox-height) / 2);
+    }
+  }
+
+  @-webkit-keyframes dothabottomcheck-19 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: calc(var(--checkbox-height) / 2);
+    }
+  }
+
+  @keyframes dothabottomcheck-19 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: calc(var(--checkbox-height) / 2);
+    }
+  }
+
+  @keyframes dothatopcheck-19 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 0;
+    }
+    100% {
+      height: calc(var(--checkbox-height) * 1.2);
+    }
+  }
+
+  @-webkit-keyframes dothatopcheck-19 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 0;
+    }
+    100% {
+      height: calc(var(--checkbox-height) * 1.2);
+    }
+  }
+
+  @-moz-keyframes dothatopcheck-19 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 0;
+    }
+    100% {
+      height: calc(var(--checkbox-height) * 1.2);
+    }
+  }
+
+  .checkbox-wrapper-19 input[type=checkbox] {
+    display: none;
+  }
+
+  .checkbox-wrapper-19 .check-box {
+    height: var(--checkbox-height);
+    width: var(--checkbox-height);
+    background-color: transparent;
+    border: calc(var(--checkbox-height) * .1) solid #000;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-transition: border-color ease 0.2s;
+    -o-transition: border-color ease 0.2s;
+    -webkit-transition: border-color ease 0.2s;
+    transition: border-color ease 0.2s;
+    cursor: pointer;
+  }
+  .checkbox-wrapper-19 .check-box::before,
+  .checkbox-wrapper-19 .check-box::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    height: 0;
+    width: calc(var(--checkbox-height) * .2);
+    background-color: #34b93d;
+    display: inline-block;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    border-radius: 5px;
+    content: " ";
+    -webkit-transition: opacity ease 0.5;
+    -moz-transition: opacity ease 0.5;
+    transition: opacity ease 0.5;
+  }
+  .checkbox-wrapper-19 .check-box::before {
+    top: calc(var(--checkbox-height) * .72);
+    left: calc(var(--checkbox-height) * .41);
+    box-shadow: 0 0 0 calc(var(--checkbox-height) * .05) var(--background-color);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  .checkbox-wrapper-19 .check-box::after {
+    top: calc(var(--checkbox-height) * .37);
+    left: calc(var(--checkbox-height) * .05);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .checkbox-wrapper-19 input[type=checkbox]:checked + .check-box,
+  .checkbox-wrapper-19 .check-box.checked {
+    border-color: #34b93d;
+    /* border-color: #cc6221; */
+
+  }
+  .checkbox-wrapper-19 input[type=checkbox]:checked + .check-box::after,
+  .checkbox-wrapper-19 .check-box.checked::after {
+    height: calc(var(--checkbox-height) / 2);
+    -moz-animation: dothabottomcheck-19 0.2s ease 0s forwards;
+    -o-animation: dothabottomcheck-19 0.2s ease 0s forwards;
+    -webkit-animation: dothabottomcheck-19 0.2s ease 0s forwards;
+    animation: dothabottomcheck-19 0.2s ease 0s forwards;
+  }
+  .checkbox-wrapper-19 input[type=checkbox]:checked + .check-box::before,
+  .checkbox-wrapper-19 .check-box.checked::before {
+    height: calc(var(--checkbox-height) * 1.2);
+    -moz-animation: dothatopcheck-19 0.4s ease 0s forwards;
+    -o-animation: dothatopcheck-19 0.4s ease 0s forwards;
+    -webkit-animation: dothatopcheck-19 0.4s ease 0s forwards;
+    animation: dothatopcheck-19 0.4s ease 0s forwards;
+  }
